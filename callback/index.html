@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kopplar TikTok…</title>
+<style>body{margin:0;background:#121112;color:#e9e6e5;font-family:Georgia,serif;padding:48px 16px}main{max-width:60ch;margin:0 auto}a{color:#d24a4a}</style></head>
+<body><main><h2>Kopplar TikTok…</h2><p>Skickar dig vidare till din n8n-server. Om ngrok visar en varningssida, klicka <b>Visit Site</b>.</p>
+<p id="manual" hidden><a id="go" href="#">Fortsätt manuellt</a></p></main>
+<script>
+var target='https://query-flatterer-fabric.ngrok-free.dev/webhook/tiktok-callback'+window.location.search;
+document.getElementById('go').href=target;document.getElementById('manual').hidden=false;
+window.location.replace(target);
+</script></body></html>
